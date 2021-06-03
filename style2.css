@@ -1,0 +1,271 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+i.fa{
+    font-family: fontawesome !important;
+}
+nav{
+    background-color:#8b0303;
+    height:80px;
+    width:100%;
+}
+label.logo{
+    color:white;
+    font-size:35px;
+    line-height:80px;
+    padding:0px 100px;
+    font-weight: bold;
+}
+nav ul{
+    float:right;
+    margin-right:20px;
+   
+}
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    line-height:80px;
+    margin:0 5px;
+}
+   
+nav ul li a{
+    color: white;
+    font-size:17px;
+    text-transform: capitalize;
+    padding:7px 13px;
+}
+a.active,a:hover{
+   color:rgb(10, 238, 10);
+    
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    transition: all .5s;
+}
+#check{
+    display:none;
+}
+@media (max-width: 1000px)
+{
+    label.logo{
+        font-size:30px;
+        padding-left: 50px;
+    }
+    .checkbtn{
+        display:block;
+        margin-right:5%;
+    }
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        text-align: center;
+        background:#2c3e50;
+        left:-100%;
+    }
+    nav ul li{
+        display:block;
+        
+    }
+    #check:checked~ ul{
+        left:0;
+    }
+}
+
+#back{
+    /* font-family:'Krona One', sans-serif; */
+    background-image: url("extra/white_wall.jpg");
+    height:200px;
+    width:100%;
+    background-repeat:x-axis;
+    text-align:center;
+    
+}
+#back h1{
+    ffont-family:'Krona One', sans-serif;
+    font-weight: 753px;
+    font-size: 22;
+    text-shadow:3px 3px 0px white;
+}
+#bak{
+    width:200px;
+    text-align:center;
+    margin:auto;
+
+}
+#bak img{
+    width:200px;
+    height:100%;
+    margin-top: -70px;
+    border-radius:50%;
+    border:dashed 4px;
+    box-shadow: 4px 4px 2px black;
+}
+#abot{
+    font-family: 'Mulish', sans-serif;
+    margin-top:20px;
+    text-align:center;
+    font-weight: 500;
+    font-size:x-large;
+    padding:0 200px ;
+}
+.stl{
+    font-weight:600;
+}
+/*education and achievements*/
+.ed{
+    background-color: lightgrey;
+    border:2px black solid;
+    border-radius: 10px ;
+    width:90%;
+    height:auto;
+    margin:50px 5%;
+    box-shadow: 3px 5px 1px black;
+}
+.education{
+    display:flex;
+    justify-content: space-around;
+}
+.education div{
+    background-color:lightgrey;
+    width:80%;
+    height:350px;
+    border:2px black solid;
+    border-radius: 10px ;
+    /*margin:40px 30px 50px 30px;*/
+    margin:2% 2% 4% 2%;
+    box-shadow: 3px 5px 1px black;
+    
+    text-align:center;
+}
+.edu1{
+   
+}
+.edu-1 h3{
+    font-family:cursive;
+    padding: 20px ;
+    border-bottom: 2px black solid;
+}
+.edu-1 img{
+    margin-top:5%;
+    width:80%;
+    height:50%;
+    border:3px black solid;
+    border-radius:4px;
+}
+.edu-1 b{
+    font-family:cursive;
+}
+/* Skill block */
+.skills .title .skill_left{
+    width:calc(50% - 30px);
+    margin-left:5%;
+    float:right;
+}
+.title h2{
+    text-align:center;
+    padding:40px;
+}
+
+.bar{
+    margin:50px 50px 50px 100px;
+}
+.info{
+    
+    display:flex;
+    align-items: center;
+    width:100%;
+    justify-content: space-between;
+}
+
+.info span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.bar{
+    width:40%;
+}
+.bar .line  {
+    height:5px;
+    width:100%;
+    background-color: lightgrey;
+}
+
+.bar .html{
+   background-image:linear-gradient(to right,crimson 80%,lightgrey 80%,lightgrey);
+}
+.bar .css{
+    background-image:linear-gradient(to right,crimson 50%,lightgrey 50%,lightgrey);
+ }
+ .bar .js{
+    background-image:linear-gradient(to right,crimson 35%,lightgrey 35%,lightgrey);
+ }
+ .bar .cpp{
+    background-image:linear-gradient(to right,crimson 30%,lightgrey 30%,lightgrey);
+ }
+ .bar .java{
+    background-image:linear-gradient(to right,crimson 30%,lightgrey 30%,lightgrey);
+ }
+
+ /*contact form*/
+ footer{
+    width:100%;
+    height:200px;
+    background-color: #8b0303;
+   
+    margin-top:100px;
+    border-top: 5px solid rgb(38, 56, 141);
+    
+}
+
+#foot{
+  width:200px;
+    color:white;
+    text-align: center;
+    
+    font-size: 1.5em;
+    font-family: cursive;
+    margin-left: 45% ;
+    margin-top:30px;
+    padding-bottom:20px;
+    border-bottom: 2px solid white;
+}
+#foot2{
+    width:200px;
+    color:white;
+    text-align: center;
+    
+    font-size: 1.1em;
+    font-family: cursive;
+    margin-left: 45% ;
+    margin-top:30px;
+    padding-bottom:20px;
+   
+
+}
+#foot2 p{
+    margin:10px;
+}
+
+#foot2 a{
+    text-decoration: none;
+    color: white;
+    border:1px solid white;
+    padding :2px;
+   
+}
+
+#foot2 a:hover{
+    color:lightblue;
+}
+
+ 
